@@ -45,17 +45,17 @@ let findPeopleByName = function (personName, done) {
 /** 6) Use `Model.findOne()` */
 let findOneByFood = function (food, done) {
   Person.findOne({ favoriteFoods: food }, function (err, data) {
-    if (err) return console.log(err);
+    // if (err) return console.log(err);
     done(null, data);
   });
 };
 
 /** 7) Use `Model.findById()` */
 let findPersonById = function (personId, done) {
-  Person.findById(personId, function (err, data) {
-    if (err) return console.log(err);
-    done(null, data);
-  });
+  // Person.findById(personId, function (err, data) {
+  //   if (err) return console.log(err);
+  //   done(null, data);
+  // });
 };
 
 const findEditThenSave = (personId, done) => {
